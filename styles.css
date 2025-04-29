@@ -1,0 +1,424 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.zoom-out-on-load {
+  animation: zoomOut 1s ease-out forwards;
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+h1{
+  font-size: 48px;
+  animation: zoomOut 1s ease-out forwards;
+}
+h2,p,.hero-buttons{
+  animation: zoomOut 1s ease-out forwards;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.btn {
+  background: royalblue;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn-enq{
+  background: royalblue;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 70px;
+}
+
+.btn-outline {
+  border: 2px solid royalblue;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: royalblue;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Hero Section */
+
+/*.hero {
+  height: 90vh;
+  background: url('images/business.jpg') center/cover no-repeat;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(12, 12, 12);
+  text-align: center;
+  flex-direction: column;
+  
+}*/
+
+
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(251, 250, 250);
+  text-align: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/business.jpg') center/cover no-repeat;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+/* About Us */
+.about, .projects, .why-choose-us, .testimonials, .cta, .contact {
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Projects */
+.project-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.btn-small {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 15px;
+  background: royalblue;
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Why Choose Us */
+.reasons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.reason {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.feature-box {
+  background: #f3f3f3;
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+
+.testimonial-carousel {
+  margin-top: 30px;
+  position: relative;
+  min-height: 150px;
+}
+
+.testimonial {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  position: absolute;
+  width: 100%;
+}
+
+.testimonial.active {
+  display: block;
+  opacity: 1;
+  position: relative;
+}
+
+.testimonial-icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  padding: 10px 0;
+}
+
+.slider {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slideLeft 25s infinite linear;
+}
+
+.slider-text {
+  font-size: clamp(1rem, 4vw, 2rem); /* Responsive font size */
+  color: #222;
+  padding-right: 100vw; /* Ensures smooth exit from left */
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+/* CTA Section */
+.cta {
+  background: url('cta-bg.jpg') center/cover no-repeat;
+  color: white;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.contact-form button {
+  align-self: center;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: lightgray;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Menu Icon */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  background-color: #333;
+  width: 25px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+/* Show menu icon on smaller screens */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  .menu-icon {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: white;
+    z-index: 999;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}

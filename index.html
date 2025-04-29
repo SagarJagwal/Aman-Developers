@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🏠Aman Developers</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "c9wJUGqEpBfYjXH6M",
+      });
+    })();
+  </script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="zoom-out-on-load">
+      <div class="container nav">
+        <div class="logo">🏠Aman Developers</div>
+  
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-icon" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+  
+        <!-- Navigation Links -->
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <a href="#contact" class="btn-enq">Enquire Now</a>
+      </div>
+    </div>
+  </header>
+  
+    
+
+  <!-- Hero Section -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+      <h1>Welcome to Aman Developers</h1>
+      <!--<h3>Building Dreams, One Brick at a Time.</h3>-->
+
+      <p>Premium Row Houses, Elegant Apartments, and Smart Commercial Spaces.</p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">Explore Projects</a>
+        <a href="#contact" class="btn">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 style="color: rgb(7, 7, 7);">Who We Are</h2>
+      <br>
+      <p>With years of experience in the construction and real estate industry, Aman Developers is a trusted name in
+        delivering high-quality residential and commercial projects. Our passion lies in transforming your vision into
+        reality—whether it's a dream home, a stylish apartment, or a profitable commercial space. <br><br>
+
+        We specialize in crafting elegant row houses, modern apartments, and functional shops that meet today’s
+        lifestyle demands while maintaining affordability and excellence. Our team of skilled professionals is committed
+        to upholding the highest standards in design, safety, and sustainability. <br><br>
+
+        At the heart of our work are three core values: <br>
+        Trust, which we earn through transparent dealings. <br>
+        Quality, which we embed in every brick and finish. <br>
+        Timely Delivery, ensuring your investment is respected and your goals are met without delay.
+        <br><br>
+        We don’t just build buildings—we build lasting relationships and vibrant communities.
+      </p>
+
+      <!--<a href="#about" class="btn">Learn More About Us</a>-->
+    </div>
+  </section>
+
+  <!-- Our Projects -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Our Signature Projects</h2>
+      <div class="project-cards">
+        <div class="card">
+          <img src="images/row house.jpg" alt="Row Houses">
+          <h3>Project 1</h3>
+          <a href="#projects" class="btn-small">View More</a>
+        </div>
+        <div class="card">
+          <img src="images/apartment.jpg" alt="Apartments">
+          <h3>Project 2</h3>
+          <a href="#projects" class="btn-small">View More</a>
+        </div>
+        <div class="card">
+          <img src="images/shops.jpg" alt="Shops">
+          <h3>Project 3</h3>
+          <a href="#projects" class="btn-small">View More</a>
+        </div>
+        <div class="card">
+          <img src="images/apartment.jpg" alt="Apartments">
+          <h3>Project 4</h3>
+          <a href="#projects" class="btn-small">View More</a>
+        </div>
+      </div>
+
+      <!--<a href="#projects" class="btn">View All Projects</a>-->
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="Services" class="why-choose-us">
+    <div class="container">
+      <h2>Why Choose Aman Developers ?</h2>
+      <!--<div class="reasons">
+        <div class="reason">🏗️ Top-Quality Construction</div>
+        <div class="reason">⏱️ On-Time Delivery</div>
+        <div class="reason">🏘️ Trusted by 500+ Families</div>
+        <div class="reason">🎯 Customer-Centric Approach</div>
+      </div>-->
+      <div class="features">
+        <div class="feature-box">
+          <img src="images/Why Choose us/quality.png" alt="Construction Icon" class="feature-icon" />
+          <p>Top-Quality Construction</p>
+        </div>
+        <div class="feature-box">
+          <img src="images/Why Choose us/on-time.png" alt="Delivery Icon" class="feature-icon" />
+          <p>On-Time Delivery</p>
+        </div>
+        <div class="feature-box">
+          <img src="images/Why Choose us/trusted.png" alt="Trust Icon" class="feature-icon" />
+          <p>Trusted by 500+ Families</p>
+        </div>
+        <div class="feature-box">
+          <img src="images/Why Choose us/customer.png" alt="Customer Icon" class="feature-icon" />
+          <p>Customer-Centric Approach</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+<section id="testimonials" class="testimonials">
+  <div class="container">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-carousel">
+      <div class="testimonial">
+        <p>"Amazing experience with Aman Developers. Delivered our dream home perfectly!" - Shaikh S.</p>
+        <br>
+        <img src="images/Testonomials/client1.png" alt="Client" class="testimonial-icon">
+      </div>
+      <div class="testimonial">
+        <p>"Professional team and top-notch quality. Highly recommend!" - Sagar J.</p>
+        <br>
+        <img src="images/Testonomials/client2.png" alt="Client" class="testimonial-icon">
+      </div>
+      <div class="testimonial">
+        <p>"Bad experience with Aman Developers. Delivered our dream home perfectly!" - Shaikh S.</p>
+        <br>
+        <img src="images/Testonomials/client3.png" alt="Client" class="testimonial-icon">
+      </div>
+      <div class="testimonial">
+        <p>"Good experience with Aman Developers. Delivered our dream home perfectly!" - Shaikh S.</p>
+        <br>
+        <img src="images/Testonomials/client1.png" alt="Client" class="testimonial-icon">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Call To Action -->
+  <section class="cta">
+    <div class="container">
+      <h2 style="color: rgb(9, 9, 9);">Ready to Find Your Dream Home or Business Space?</h2>
+      <br><br>
+      <!--<a href="#contact" class="btn">Schedule a Site Visit</a>
+      <a href="#contact" class="btn-outline">Talk to Our Experts</a>-->
+      <div class="slider-container">
+        <div class="slider">
+          <p class="slider-text" style="color: black;">! Call Now ! 9999999999 ! Call Now ! 9999999999 ! Call Now ! 9999999999 ! Call Now ! 9999999999 ! Call Now ! 9999999999</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <form class="contact-form" onsubmit="return sendMail();">
+        <input type="text" placeholder="Your Name" required id="name">
+        <input type="email" placeholder="Your Email" required id="email">
+        <input type="tel" placeholder="Your Phone" required id="telephone">
+        <textarea placeholder="Your Message" required id="message"></textarea>
+        <button type="submit" class="btn">Submit Inquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div>© 2025 BuildersCo. All Rights Reserved.</div>
+      <div class="social-icons">
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">LinkedIn</a> |
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
